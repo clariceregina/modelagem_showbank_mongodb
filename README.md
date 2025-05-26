@@ -15,6 +15,7 @@ Este projeto demonstra diferentes abordagens de **modelagem de dados no MongoDB*
 - `clientes`: dados pessoais básicos.
 - `contas`: referencia os clientes via **DBRef**.
 - `endereco`: também utiliza **DBRef** para ligação com clientes.
+- ➕ Também há exemplos com **referência manual**, onde o ID do cliente é armazenado diretamente (`id_cliente`) e a ligação é feita por meio de código, sem uso de DBRef.
 
 ### 2. **Relacionamentos**
 
