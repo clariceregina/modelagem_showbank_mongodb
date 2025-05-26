@@ -193,6 +193,19 @@ db.clientes.insertOne({
 "Status_Civil": "Casado(a)"
 })
 
+// inserir documento na coleção endereço que faça referência à coleção clientes utilizando referência manual (Manual Reference)
+
+db.endereco.insertOne({
+"_id": 3,
+"id_clientes": 1,
+"Rua":"Escoteiro Fernando César", 
+"Numero": 646, 
+"Bairro": "Nova Era", 
+"Cidade":"Juiz de Fora", 
+"Estado":"MG", 
+"CEP": "36087-380"
+})
+
 // inserir documento na coleção conta e endereço que faça referência à coleção clientes utilizando a convenção DBRef (no VSCode)
 
 db.contas.insertOne({
